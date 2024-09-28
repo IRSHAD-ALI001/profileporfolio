@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>porfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ---------------header--------------- -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="38636332-designstyle-box-l.png" class="logo">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p></p><span id="element"></span>
+            </div>
+           <div class="tt"><h1>Hi, I'm <span>Irshad Ali</span></h1></div>
+    </div>
+</div>
+
+<!-- --------------about me-------------- -->
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="llll.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I am a passionate Full-Stack Developer currently pursuing a Master’s in Computer Applications. With a strong foundation in both front-end and back-end technologies, I specialize in building dynamic, responsive, and scalable web applications and data structure question. I have hands-on experience working with a variety of frameworks and languages such as JavaScript, React, Node.js, and databases like MongoDB and SQL.</p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming languages</span><br>C, C++, Java,Python</li>
+                        <li><span>Web development</span><br>Html, Css, Javascript</li>
+                        <li><span>Backened</span><br>Flask ,Mysql, Python</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023</span><br> 2 months Internship from Drivesales(online) </li>
+                        
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-Current</span><br>MCA from Ajeenkya D Y Patil</li>
+                        <li><span>2019-2022</span><br>Bsc in Physics from nowrosjee wadia college</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------service ----------->
+
+ <div id="services">
+    <div id="container">
+         <h1 class="sub-title">MY SERVICES</h1>
+         <div class="services-list">
+            <div>
+                <i class="fa-solid fa-globe"></i>
+                <h2>Web design</h2>
+                <p>"I am a passionate web developer with a strong foundation in HTML, CSS, and JavaScript. With my expertise, I craft responsive and visually appealing websites that focus on user experience and clean, efficient code. I have experience in building dynamic web pages, ensuring cross-browser compatibility, and optimizing performance. "</p>
+                <a href="https://github.com/IRSHAD-ALI001">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gears"></i>
+                <h2>software developer</h2>
+                <p>"I am a skilled software developer with a deep understanding of data structures and algorithms, which I leverage to solve complex problems efficiently. With a focus on optimization and scalability, I design and implement software solutions that address real-world challenges. My expertise includes working with fundamental data structures like arrays, linked lists.</p>
+                <a href="https://github.com/IRSHAD-ALI001">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-layer-group"></i>
+                <h2>Backened</h2>
+                <p>"I am a backend developer with strong expertise in SQL and Python. I use SQL to design and manage efficient databases, ensuring data integrity and optimizing queries for performance. With Python, I build robust server-side applications, utilizing libraries like Flask, Django, and SQLAlchemy to handle everything from API development to database management.</p>
+                <a href="https://github.com/IRSHAD-ALI001">Learn more</a>
+            </div>
+         </div>
+    </div>
+ </div>
+
+ <!-- -----------portfolio-------------->
+<div id="porfolio">
+    <div class="container">
+        <h1 class="sub-title">MY WORK</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="pexels-pixabay-147413.jpg">
+                <div class="layer">
+                    <h3>Libaray management </h3>
+                    <p>I build a library management program usinf java that can store books and issue books accordinglym, it is bascic program that uses core fundamentals like objects, class,inheritance etc </p>
+                    <a href="https://github.com/IRSHAD-ALI001"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pexels-luis-gomes-166706-546819.jpg">
+                <div class="layer">
+                    <h3>GYM AND FITNESS APP</h3>
+                    <p>Develop a mobile application using kotlin bascis and fundamentals that give strong grasp on mobile app development</p>
+                    <a href="https://github.com/IRSHAD-ALI001"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pexels-wdnet-230544.jpg">
+                <div class="layer">
+                    <h3>GRAPHICS USING C</h3>
+                    <p>using c build a program that uses graphic and print the bravice lattice structure bascially some cube and circle intersection.</p>
+                    <a href="https://github.com/IRSHAD-ALI001"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">SEE MORE</a>
+    </div>
+</div>
+
+ 
+<!-- --------------------javascript-------------------------------- -->
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+
+    }
+    
+</script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['WEB DEVELPOER', 'FRONTEND DEVELPOER', 'BACKEND DEVELPOER','FULL STACK DEVELPOER'],
+      typeSpeed: 50,
+    }); 
+</script>
+<script src="https://kit.fontawesome.com/c98bc39fef.js" crossorigin="anonymous"></script>
+</body>
+</html>
